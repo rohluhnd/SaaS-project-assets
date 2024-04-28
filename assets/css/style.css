@@ -1,12 +1,19 @@
 .header {
+  position: relative;
+  height: 550px;
   background-image: url("../img/backgrounds/background-top.svg");
-  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 100px;
 }
 /* navbar styling  */
 .header .navbar {
   position: fixed;
-  width: 100%;
-  z-index: 100;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: ease-in-out 0.3s;
+  z-index: 500;
 }
 .navbar .navbar_wrapper {
   display: flex;
@@ -16,8 +23,8 @@
   display: none;
 }
 .navbar_wrapper .brand {
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
   margin-right: auto;
   display: flex;
   align-items: center;
@@ -28,7 +35,6 @@
 }
 .collapsible .menu {
   display: flex;
-  align-items: center;
   gap: 20px;
   margin-right: 30px;
 }
@@ -41,27 +47,27 @@
 /* hero section styling  */
 .header .hero_section {
   position: relative;
-  top: 250px;
+  top: 220px;
 }
 .hero_section .hero_wrapper {
   display: flex;
-  align-items: flex-start;
 }
 .hero_wrapper .hero_title {
-  max-width: 300px;
+  max-width: 450px;
   margin-right: auto;
 }
-.hero_title h1 {
+.hero_title .title {
   color: var(--black);
-  font-size: 45px;
+  font-size: 42px;
   font-weight: 500;
   font-family: "inter-bold", sans-serif;
   line-height: 1.2;
   margin: 0;
+  max-width: 300px;
 }
-.hero_title p {
-  font-size: 13px;
+.hero_title .sub_title {
   margin-top: 10px;
+  margin-bottom: 25px;
 }
 .hero_title .title_link {
   display: flex;
@@ -74,16 +80,15 @@
 .hero_wrapper .hero_logo_icons {
   max-width: 450px;
   width: 100%;
+  height: 100%;
 }
 .hero_logo_icons .logo_icons_wrapper {
-  display: flex;
   position: relative;
-  bottom: 0;
   animation: 4s linear 0s 1 alternate slideUp;
   height: 100%;
 }
 .logo_icons_wrapper .logo_icon {
-  position: relative;
+  position: absolute;
   width: 60px;
   height: 60px;
   background-color: var(--white);
@@ -92,36 +97,36 @@
   padding: 10px;
 }
 .logo_icons_wrapper .google {
-  top: -40px;
-  left: 47px;
+  top: -30px;
+  left: 55px;
   width: 50px;
   height: 50px;
 }
 .logo_icons_wrapper .atlassian {
-  top: -40px;
-  left: 100px;
+  top: -30px;
+  left: 160px;
 }
 .logo_icons_wrapper .asana {
-  top: -40px;
-  left: 250px;
+  top: -30px;
+  left: 390px;
 }
 .logo_icons_wrapper .paypal {
-  top: 120px;
-  right: 140px;
+  top: 100px;
+  left: 45px;
 }
 .logo_icons_wrapper .google-a {
-  top: 230px;
-  right: 110px;
+  top: 210px;
+  left: 150px;
   width: 50px;
   height: 50px;
 }
 .logo_icons_wrapper .weave {
-  top: 110px;
-  right: 50px;
+  top: 100px;
+  left: 260px;
 }
 .logo_icons_wrapper .calender {
   top: 250px;
-  left: -10px;
+  left: 355px;
 }
 /* Key benefits styling */
 .benefit_section {
@@ -134,7 +139,7 @@
 }
 .benefit_header h2 {
   text-align: center;
-  color: var(--black);
+  margin-bottom: 10px;
 }
 .benefit_header p {
   text-align: center;
@@ -160,30 +165,171 @@
 .banner_one {
   margin-top: 100px;
   margin-bottom: 100px;
-  background-color: rgba(249, 250, 254, 255);
 }
 .banner_one .banner_one_wrapper {
   display: flex;
-  align-items: center;
+  background-color: rgba(249, 250, 254, 255);
 }
 .banner_one_wrapper .banner_one_header {
   max-width: 400px;
   margin-right: auto;
+  padding-top: 150px;
 }
-.banner_one_title h2 {
-  color: var(--black);
-  font-size: 26px;
-  font-weight: 500;
+.banner_one_header .title {
   font-family: "inter-bold", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
   line-height: 1.2;
+  color: var(--black);
+  max-width: 350px;
 }
-.banner_one_title .btn_primary i {
+.banner_one_header .btn_primary i {
   margin-right: 5px;
 }
 .banner_one_wrapper .banner_one_image {
   padding-top: 100px;
 }
-
+/* Why front styling */
+.why_front_section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.why_front_section .why_front_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.why_front_wrapper .why_front_header {
+  max-width: 600px;
+}
+.why_front_header h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.why_front_header p {
+  text-align: center;
+  max-width: 485px;
+}
+.why_front_wrapper .why_front {
+  display: flex;
+}
+.why_front .basic_elements,
+.why_front .components,
+.why_front .combined_components,
+.why_front .page_layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.basic_elements .circle_wrapper,
+.components .circle_wrapper,
+.combined_components .circle_wrapper,
+.page_layout .circle_wrapper {
+  display: flex;
+  align-items: center;
+}
+.circle_wrapper .circle {
+  width: 40px;
+  height: 40px;
+  background-color: #ecf2ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle .inner_circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--blue);
+}
+.basic_elements span,
+.components span,
+.combined_components span,
+.page_layout span {
+  align-self: center;
+  color: var(--black);
+}
+.circle_wrapper .invisible {
+  background-color: transparent;
+}
+.banner_two {
+  margin-bottom: 50px;
+}
+.hubspot_section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.hubspot_section .hubspot_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  /* padding: 50px; */
+}
+.hubspot_wrapper .hubspot_image {
+  position: relative;
+}
+.hubspot_image .upper_image {
+  width: 380px;
+  position: relative;
+}
+.hubspot_image .image_layer {
+  width: 200px;
+  position: absolute;
+  top: 113px;
+  left: -55px;
+  z-index: -1;
+}
+.hubspot_wrapper .hubspot_text {
+  max-width: 500px;
+}
+.hubspot_text .logo {
+  width: 78px;
+  margin-bottom: 15px;
+}
+.hubspot_text p {
+  max-width: 350px;
+  font-size: 17px;
+  color: var(--black);
+  margin-bottom: 30px;
+}
+.hubspot_text h4 {
+  color: var(--black);
+  font-size: 15px;
+  margin: 0;
+}
+.hubspot_text span {
+  font-size: 12px;
+}
+.partner {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.partner .partner_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.partner_wrapper .partner_title {
+  max-width: 600px;
+}
+.partner_title h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: var(--text-color);
+}
+.partner_wrapper .partner_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.partner_logo img {
+  width: 150px;
+}
 @keyframes slideUp {
   0% {
     bottom: -100px;
