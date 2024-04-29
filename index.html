@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/cf7352dd8f.js"
       crossorigin="anonymous"
@@ -104,6 +105,7 @@
       </section>
     </header>
     <main class="body">
+      <!-- benefit section  -->
       <section class="benefit_section">
         <div class="container benefit_wrapper">
           <div class="benefit_header">
@@ -156,6 +158,7 @@
           </div>
         </div>
       </section>
+      <!-- banner one section  -->
       <section class="banner_one">
         <div class="container banner_one_wrapper">
           <div class="banner_one_header">
@@ -171,6 +174,7 @@
           </div>
         </div>
       </section>
+      <!-- why front section  -->
       <section class="why_front_section">
         <div class="container why_front_wrapper">
           <div class="why_front_header">
@@ -225,11 +229,13 @@
           </div>
         </div>
       </section>
+      <!-- banner two section  -->
       <section class="banner_two">
         <div class="container">
           <img src="./assets/img/banners/banner_two.jpg" alt="second banner" />
         </div>
       </section>
+      <!-- hubspot section  -->
       <section class="hubspot_section">
         <div class="container hubspot_wrapper">
           <div class="hubspot_image">
@@ -244,16 +250,17 @@
             <div class="logo">
               <img src="./assets/img/company_logos/hubspot.svg" alt="hubspot" />
             </div>
-            <p>
+            <p class="description">
               The template is really nice and offers quite a large set of
               options. it's beautiful and the coding is done quickly and
               seamlessy. Thank you!
             </p>
-            <h4>Christina Kray</h4>
+            <h4 class="name">Christina Kray</h4>
             <span>Executive Director</span>
           </div>
         </div>
       </section>
+      <!-- partners section  -->
       <section class="partner">
         <div class="container partner_wrapper">
           <div class="partner_title">
@@ -277,7 +284,173 @@
           </div>
         </div>
       </section>
+      <!-- pricing section  -->
+      <section class="pricing">
+        <div class="container pricing_wrapper">
+          <div class="pricing_header">
+            <h2 class="title">Pricing</h2>
+            <p>No additional costs. Pay for what you use</p>
+          </div>
+          <div class="pricing_table">
+            <div class="pricing_card">
+              <p class="price"><span>59</span> / mo</p>
+              <span class="line wing"></span>
+              <p class="description">
+                Start your Front business now. 100% guarnateed money back. No
+                questions asked.
+              </p>
+              <div class="card_button">
+                <a class="btn btn_primary" href="#"
+                  ><i class="fa-solid fa-circle-play"></i>Play Video</a
+                >
+                <p>No credit card required.</p>
+              </div>
+            </div>
+            <div
+              class="pricing_features"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <div class="feature">
+                <img src="./assets/img/icons/components.svg" alt="icon" />
+                <h3>Hundreds of components</h3>
+                <p>
+                  Achieve maximum productitivity with minimum effort with Front
+                  and create robust Limitless products.
+                </p>
+              </div>
+              <div class="feature">
+                <img src="./assets/img/icons/images.svg" alt="icon" />
+                <h3>Images included</h3>
+                <p>
+                  Images included We made custom license for all our premium
+                  images in the front
+                </p>
+              </div>
+              <div class="feature">
+                <img src="./assets/img/icons/cancel.svg" alt="icon" />
+                <h3>Cancel anytime <span class="sketch">sketch</span></h3>
+                <p>If its not for you, just cancel, no hidden cost or fees.</p>
+              </div>
+              <div class="feature">
+                <img src="./assets/img/icons/moneyback.svg" alt="icon" />
+                <h3>Money back</h3>
+                <p>100% guarnateed money back. No questions asked</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hire us section  -->
+      <section class="hire_us_section">
+        <div class="container hire_us_wrapper">
+          <div class="hire_us">
+            <h2>Hire Us</h2>
+            <p class="sub_title">Whatever your goal - we will get you there</p>
+            <span class="wing line"></span>
+            <p class="description">
+              "I love front! I love the ease of use, I love the fact that I have
+              total creative freedom..."
+            </p>
+            <div class="hire_us_footer">
+              <h4>Charlotte Moore</h4>
+              <span>Head of Commercials, Slack</span>
+              <div class="footer_img">
+                <img src="./assets/img/people/woman_two.jpg" alt="" />
+                <img src="./assets/img/people/woman_one.jpg" alt="" />
+                <img id="bigger" src="./assets/img/people/man_one.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="hire_us_form">
+            <form class="form" action="index.html" method="post">
+              <span
+                >Fill out the form and we'll be in touch as sson as
+                possible</span
+              >
+              <div class="name_group">
+                <div class="group">
+                  <input
+                    class="firstname"
+                    type="text"
+                    name="firstname"
+                    id="firstname"
+                    placeholder="First name"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="lastname"
+                    id="lastname"
+                    placeholder="Last name"
+                    required
+                  />
+                </div>
+                <div class="group">
+                  <input
+                    class="firstname"
+                    type="text"
+                    name="firstname"
+                    id="firstname"
+                    placeholder="First name"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="lastname"
+                    id="lastname"
+                    placeholder="Last name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="select_group">
+                <select class="budget" name="budeget" id="budget">
+                  <option value="0">Budget</option>
+                  <option value="1">1000$</option>
+                  <option value="2">2000$</option>
+                  <option value="3">3000$</option>
+                  <option value="4">4000$</option>
+                  <option value="5">5000$</option>
+                </select>
+                <select class="country" name="country" id="country">
+                  <option value="0">Country</option>
+                  <option value="1">🇺🇸United States</option>
+                  <option value="2">🇬🇧United kingdom</option>
+                  <option value="3">🇨🇦Canada</option>
+                  <option value="4">🇳🇬Nigeria</option>
+                  <option value="5">🇷🇺Russia</option>
+                </select>
+              </div>
+              <div class="message_group">
+                <textarea name="message" id="message" cols="30" rows="10">
+Tell us more about your project, needs, and timeline, please...</textarea
+                >
+                <div class="privacy">
+                  <input type="checkbox" name="policy" id="policy" />
+                  <p>
+                    Yes, I'd like to receive ocassional marketing emails from
+                    front. I have the right to opt out at any time.
+                  </p>
+                </div>
+                <ul>
+                  <li><a href="#">View privacy policy</a></li>
+                  <li class="blue_link"><a href="#">View privacy policy</a></li>
+                </ul>
+                <button class="btn btn_primary" type="submit">
+                  Get Started
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

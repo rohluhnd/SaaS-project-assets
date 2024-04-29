@@ -47,7 +47,7 @@
 /* hero section styling  */
 .header .hero_section {
   position: relative;
-  top: 220px;
+  top: 210px;
 }
 .hero_section .hero_wrapper {
   display: flex;
@@ -58,7 +58,7 @@
 }
 .hero_title .title {
   color: var(--black);
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 500;
   font-family: "inter-bold", sans-serif;
   line-height: 1.2;
@@ -97,36 +97,36 @@
   padding: 10px;
 }
 .logo_icons_wrapper .google {
-  top: -30px;
+  top: -20px;
   left: 55px;
   width: 50px;
   height: 50px;
 }
 .logo_icons_wrapper .atlassian {
-  top: -30px;
+  top: -25px;
   left: 160px;
 }
 .logo_icons_wrapper .asana {
-  top: -30px;
-  left: 390px;
+  top: -25px;
+  left: 380px;
 }
 .logo_icons_wrapper .paypal {
-  top: 100px;
+  top: 130px;
   left: 45px;
 }
 .logo_icons_wrapper .google-a {
-  top: 210px;
-  left: 150px;
+  top: 240px;
+  left: 155px;
   width: 50px;
   height: 50px;
 }
 .logo_icons_wrapper .weave {
-  top: 100px;
+  top: 125px;
   left: 260px;
 }
 .logo_icons_wrapper .calender {
   top: 250px;
-  left: 355px;
+  left: 350px;
 }
 /* Key benefits styling */
 .benefit_section {
@@ -152,7 +152,7 @@
 }
 .key_benefits .benefit {
   padding: 30px;
-  box-shadow: 0px 0px 20px rgb(0 0 0 / 14%);
+  box-shadow: 0px 5px 20px rgb(0 0 0 / 14%);
 }
 .benefit img {
   width: 50px;
@@ -254,9 +254,11 @@
 .circle_wrapper .invisible {
   background-color: transparent;
 }
+/* banner two styling  */
 .banner_two {
   margin-bottom: 50px;
 }
+/* hubspot_section styling */
 .hubspot_section {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -266,7 +268,6 @@
   align-items: center;
   justify-content: center;
   gap: 100px;
-  /* padding: 50px; */
 }
 .hubspot_wrapper .hubspot_image {
   position: relative;
@@ -303,6 +304,7 @@
 .hubspot_text span {
   font-size: 12px;
 }
+/* partners styling  */
 .partner {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -329,6 +331,233 @@
 }
 .partner_logo img {
   width: 150px;
+}
+/* pricing styling  */
+.pricing {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.pricing .pricing_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.pricing_wrapper .pricing_header {
+  text-align: center;
+}
+.pricing_wrapper .pricing_table {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.pricing_table .pricing_card {
+  padding: 55px;
+  box-shadow: 0px 15px 15px rgb(0 0 0 / 14%);
+}
+.pricing_card .price {
+  font-size: 16px;
+}
+.pricing_card .price > span {
+  font-size: 40px;
+  font-family: "Inter-bold", sans-serif;
+  font-weight: 500;
+  color: var(--black);
+}
+.pricing_card .line {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.308);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.pricing_card .description {
+  max-width: 235px;
+}
+.pricing_card .card_button {
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.card_button .btn_primary {
+  margin-bottom: 10px;
+}
+.card_button .btn_primary i {
+  margin-right: 5px;
+}
+.card_button p {
+  margin: 0;
+}
+.pricing_table .pricing_features {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 20px;
+}
+.pricing_features .feature {
+  padding: 20px;
+}
+.feature img {
+  width: 50px;
+  height: 50px;
+}
+.feature h3 {
+  color: var(--black);
+}
+.feature p {
+  max-width: 210px;
+  margin: 0;
+}
+/* Hire us styling  */
+.hire_us_section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: var(--navyblue);
+}
+.hire_us_section .hire_us_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.hire_us_wrapper .hire_us {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+}
+.hire_us h2 {
+  color: var(--white);
+  margin-bottom: 10px;
+}
+.hire_us .sub_title {
+  max-width: 150px;
+  margin: 0;
+}
+.hire_us .line {
+  background-color: var(--white);
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.hire_us .description {
+  color: var(--white);
+  font-style: italic;
+  max-width: 300px;
+}
+.hire_us .hire_us_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+.hire_us_footer h4 {
+  color: var(--white);
+  margin: 0;
+}
+.hire_us_footer span {
+  margin-bottom: 30px;
+  font-size: 13px;
+}
+.hire_us_footer .footer_img {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer_img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.footer_img #bigger {
+  width: 50px;
+  height: 50px;
+}
+.hire_us_form .form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: var(--white);
+  padding: 50px;
+  border-radius: 10px;
+  max-width: 450px;
+}
+.form span {
+  color: var(--black);
+  font-size: 15px;
+}
+.form .name_group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.name_group .group {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.group input {
+  width: 162px;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid rgb(0 0 0 / 51%);
+  border-radius: 4px;
+  resize: both;
+}
+.form .select_group {
+  display: flex;
+  gap: 20px;
+}
+.select_group select {
+  width: 162px;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid rgb(0 0 0 / 51%);
+  border-radius: 4px;
+  background-color: var(--white);
+  resize: both;
+}
+.form .message_group {
+  display: flex;
+  flex-direction: column;
+}
+.message_group textarea {
+  width: 344px;
+  padding: 10px;
+  color: var(--text-color);
+  font-size: 13px;
+}
+.message_group .privacy {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  margin-top: 10px;
+}
+.privacy input {
+  border: 1px solid rgb(0 0 0 / 51%);
+  border-radius: 4px;
+  background-color: var(--white);
+}
+.privacy p {
+  max-width: 350px;
+}
+.message_group ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.message_group ul li a {
+  border-bottom: 2px dotted var(--text-color);
+  color: var(--text-color);
+}
+.message_group .blue_link a {
+  color: var(--blue);
+  border-bottom: 2px dotted var(--blue);
+}
+.message_group button {
+  margin-top: 30px;
+  align-self: center;
 }
 @keyframes slideUp {
   0% {
