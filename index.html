@@ -37,7 +37,7 @@
           <div class="collapsible">
             <ul class="menu">
               <li class="menu_link"><a href="#">Home</a></li>
-              <li class="menu_link Features"><a href="#">Features</a></li>
+              <li class="menu_link features"><a href="#">Features</a></li>
               <li class="menu_link"><a href="#">Learn</a></li>
               <li class="menu_link"><a href="#">Pricing</a></li>
               <li class="menu_link"><a href="#">Hire&nbsp;us</a></li>
@@ -356,9 +356,13 @@
               <h4>Charlotte Moore</h4>
               <span>Head of Commercials, Slack</span>
               <div class="footer_img">
-                <img src="./assets/img/people/woman_two.jpg" alt="" />
-                <img src="./assets/img/people/woman_one.jpg" alt="" />
-                <img id="bigger" src="./assets/img/people/man_one.jpg" alt="" />
+                <img src="./assets/img/people/woman_two.jpg" alt="image" />
+                <img src="./assets/img/people/woman_one.jpg" alt="image" />
+                <img
+                  id="bigger"
+                  src="./assets/img/people/man_one.jpg"
+                  alt="image"
+                />
               </div>
             </div>
           </div>
@@ -415,11 +419,11 @@
                 </select>
                 <select class="country" name="country" id="country">
                   <option value="0">Country</option>
-                  <option value="1">🇺🇸United States</option>
-                  <option value="2">🇬🇧United kingdom</option>
-                  <option value="3">🇨🇦Canada</option>
-                  <option value="4">🇳🇬Nigeria</option>
-                  <option value="5">🇷🇺Russia</option>
+                  <option value="1">United States</option>
+                  <option value="2">United kingdom</option>
+                  <option value="3">Canada</option>
+                  <option value="4">Nigeria</option>
+                  <option value="5">Russia</option>
                 </select>
               </div>
               <div class="message_group">
@@ -446,7 +450,131 @@ Tell us more about your project, needs, and timeline, please...</textarea
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container footer_wrapper">
+        <div class="top_footer">
+          <div class="company_info">
+            <img src="./assets/img/project_logo/logo.svg" alt="company logo" />
+            <ul class="info">
+              <li>
+                <i class="fa-solid fa-location-arrow"></i>153 Williamson Plaza,
+                Maggieberg
+              </li>
+              <li class="phone">
+                <i class="fa-solid fa-phone"></i>+1&nbsp;(062)&nbsp;109-9222
+              </li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="company">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li>
+                  <a href="#"
+                    >Career <span class="sketch hiring">We're hiring</span></a
+                  >
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Hire&nbsp;us</a></li>
+              </ul>
+            </div>
+            <div class="features">
+              <h3>Features</h3>
+              <ul>
+                <li><a href="#">Press</a></li>
+                <li class="note"><a href="#">Releases notes</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+            <div class="documentation">
+              <h3>Documentation</h3>
+              <ul>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Status</a></li>
+                <li><a href="#">API Reference</a></li>
+                <li><a href="#">Tech Requirements</a></li>
+              </ul>
+            </div>
+            <div class="resources">
+              <h3>Resources</h3>
+              <ul>
+                <li><i class="fa-solid fa-circle-info"></i>Help</li>
+                <li><i class="fa-solid fa-circle-user"></i>Your Account</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottom_footer">
+          <div class="policy">
+            <ul class="term_link">
+              <li>Privacy & Policy</li>
+              <li class="terms">
+                <a href="#"> <i class="fa-solid fa-greater-than"></i>Terms</a>
+              </li>
+              <li><i class="fa-solid fa-greater-than"></i>Site Map</li>
+            </ul>
+            <div class="social-media">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-google"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+              </ul>
+              <select class="country" name="country" id="country">
+                <option value="1">🇺🇸 United States</option>
+                <option value="2">🇬🇧 United kingdom</option>
+              </select>
+            </div>
+          </div>
+          <div class="copyright">
+            <span
+              ><i class="fa-regular fa-copyright"></i> Front.2024 Responsive
+              designs. All rights reserved.</span
+            >
+            <p>
+              When you visit or interact with our sites, services or tools, we
+              or our authorised service providers may use cookies for storing
+              information to help provide you wih a better, faster and safer
+              experience and marketing purposes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const nav = document.getElementById("topNav");
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("sticky");
+        } else {
+          nav.classList.remove("sticky");
+        }
+      };
+
+      const navButton = document.querySelector("button[aria-expanded]");
+
+      function toggleNav({ target }) {
+        const expanded =
+          target.getAttribute("aria-expanded") === "true" || false;
+        navButton.setAttribute("aria-expanded", !expanded);
+      }
+
+      navButton.addEventListener("click", toggleNav);
+    </script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
