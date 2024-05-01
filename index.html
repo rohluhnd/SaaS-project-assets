@@ -29,7 +29,7 @@
             aria-expanded="false"
             aria-controls="navbarDropdown"
           >
-            <span>&#9776;</span>
+            <span class="trigram">&#9776;</span>
           </button>
           <a class="brand" href="#">
             <img src="./assets/img/project_logo/logo.svg" alt="company logo" />
@@ -47,7 +47,7 @@
         </div>
       </nav>
       <!-- hero-section  -->
-      <section class="hero_section">
+      <div class="hero_section">
         <div class="container hero_wrapper">
           <div class="hero_title">
             <p class="title">Empowering teams with the freedom</p>
@@ -102,7 +102,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </header>
     <main class="body">
       <!-- benefit section  -->
@@ -159,7 +159,7 @@
         </div>
       </section>
       <!-- banner one section  -->
-      <section class="banner_one">
+      <div class="banner_one">
         <div class="container banner_one_wrapper">
           <div class="banner_one_header">
             <p class="title">
@@ -173,7 +173,7 @@
             <img src="./assets/img/banners/banner_one.jpg" alt="first banner" />
           </div>
         </div>
-      </section>
+      </div>
       <!-- why front section  -->
       <section class="why_front_section">
         <div class="container why_front_wrapper">
@@ -230,11 +230,14 @@
         </div>
       </section>
       <!-- banner two section  -->
-      <section class="banner_two">
-        <div class="container">
+      <div class="banner_two">
+        <div class="container banner_two_wrapper">
           <img src="./assets/img/banners/banner_two.jpg" alt="second banner" />
+          <span class="banner_two_icon">
+            <i class="fa-solid fa-circle-play"></i>
+          </span>
         </div>
-      </section>
+      </div>
       <!-- hubspot section  -->
       <section class="hubspot_section">
         <div class="container hubspot_wrapper">
@@ -395,14 +398,14 @@
                     class="firstname"
                     type="text"
                     name="firstname"
-                    id="firstname"
+                    id="firstname1"
                     placeholder="First name"
                     required
                   />
                   <input
                     type="text"
                     name="lastname"
-                    id="lastname"
+                    id="lastname1"
                     placeholder="Last name"
                     required
                   />
@@ -532,7 +535,7 @@ Tell us more about your project, needs, and timeline, please...</textarea
                   <a href="#"><i class="fa-brands fa-github"></i></a>
                 </li>
               </ul>
-              <select class="country" name="country" id="country">
+              <select class="language" name="language" id="language">
                 <option value="1">🇺🇸 United States</option>
                 <option value="2">🇬🇧 United kingdom</option>
               </select>
@@ -554,27 +557,7 @@ Tell us more about your project, needs, and timeline, please...</textarea
       </div>
     </footer>
 
-    <script>
-      const nav = document.getElementById("topNav");
-
-      window.onscroll = function () {
-        if (window.pageYOffset > 100) {
-          nav.classList.add("sticky");
-        } else {
-          nav.classList.remove("sticky");
-        }
-      };
-
-      const navButton = document.querySelector("button[aria-expanded]");
-
-      function toggleNav({ target }) {
-        const expanded =
-          target.getAttribute("aria-expanded") === "true" || false;
-        navButton.setAttribute("aria-expanded", !expanded);
-      }
-
-      navButton.addEventListener("click", toggleNav);
-    </script>
+    <script src="./assets/js/script.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
