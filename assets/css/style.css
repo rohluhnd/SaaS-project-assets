@@ -82,7 +82,6 @@
 }
 .hero_wrapper .hero_title {
   max-width: 450px;
-  width: 100%;
   margin-right: auto;
 }
 .hero_title .title {
@@ -206,7 +205,6 @@
 }
 .banner_one_wrapper .banner_one_header {
   max-width: 400px;
-  width: 100%;
   margin-right: auto;
   padding-top: var(--size-150);
 }
@@ -250,6 +248,7 @@
 }
 .why_front_wrapper .why_front {
   display: flex;
+  flex: 0 1 auto;
 }
 .why_front .basic_elements,
 .why_front .components,
@@ -347,7 +346,6 @@
 }
 .hubspot_wrapper .hubspot_text {
   max-width: 500px;
-  width: 100%;
 }
 .hubspot_text .logo {
   width: 78px;
