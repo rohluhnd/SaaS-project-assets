@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  height: 550px;
+  height: 34.375rem;
   background-image: url("../img/backgrounds/background-top.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,13 +75,13 @@
 /* hero section styling  */
 .header .hero_section {
   position: relative;
-  top: 210px;
+  top: 13.125rem;
 }
 .hero_section .hero_wrapper {
   display: flex;
 }
 .hero_wrapper .hero_title {
-  max-width: 450px;
+  max-width: 28.125rem;
   margin-right: auto;
 }
 .hero_title .title {
@@ -106,7 +106,7 @@
   margin-right: var(--size-5);
 }
 .hero_wrapper .hero_logo_icons {
-  max-width: 450px;
+  max-width: 28.125rem;
   width: 100%;
   height: 100%;
 }
@@ -126,7 +126,7 @@
 }
 .logo_icons_wrapper .google {
   top: -1.25rem;
-  left: 55px;
+  left: 3.4375rem;
   width: var(--size-50);
   height: var(--size-50);
 }
@@ -136,21 +136,21 @@
 }
 .logo_icons_wrapper .asana {
   top: -1.5625rem;
-  left: 380px;
+  left: 23.75rem;
 }
 .logo_icons_wrapper .paypal {
   top: 8.125rem;
-  left: 45px;
+  left: 2.8125rem;
 }
 .logo_icons_wrapper .google-a {
-  top: 240px;
+  top: 15rem;
   left: 9.6875rem;
   width: var(--size-50);
   height: var(--size-50);
 }
 .logo_icons_wrapper .weave {
   top: 7.8125rem;
-  left: 260px;
+  left: 16.25rem;
 }
 .logo_icons_wrapper .calender {
   top: 15.625rem;
@@ -162,7 +162,7 @@
   margin-bottom: var(--size-100);
 }
 .benefit_wrapper .benefit_header {
-  max-width: 600px;
+  max-width: 37.5rem;
   width: 100%;
   margin: auto;
 }
@@ -204,7 +204,7 @@
   background-color: rgba(249, 250, 254, 255);
 }
 .banner_one_wrapper .banner_one_header {
-  max-width: 400px;
+  max-width: 25rem;
   margin-right: auto;
   padding-top: var(--size-150);
 }
@@ -235,7 +235,7 @@
   gap: var(--size-50);
 }
 .why_front_wrapper .why_front_header {
-  max-width: 600px;
+  max-width: 37.5rem;
 }
 .why_front_header h2 {
   text-align: center;
@@ -243,7 +243,7 @@
 }
 .why_front_header p {
   text-align: center;
-  max-width: 485px;
+  max-width: 30.3125rem;
   width: 100%;
 }
 .why_front_wrapper .why_front {
@@ -301,8 +301,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 80px;
+  width: var(--size-80);
+  height: var(--size-80);
   position: absolute;
   top: 46%;
   left: 46.5%;
@@ -334,27 +334,27 @@
   position: relative;
 }
 .hubspot_image .upper_image {
-  width: 380px;
+  width: 23.75rem;
   position: relative;
 }
 .hubspot_image .image_layer {
   width: var(--size-200);
   position: absolute;
-  top: 113px;
-  left: -55px;
+  top: 7.0625rem;
+  left: -3.4375rem;
   z-index: -1;
 }
 .hubspot_wrapper .hubspot_text {
   max-width: 500px;
 }
 .hubspot_text .logo {
-  width: 78px;
+  width: 4.875rem;
   margin-bottom: var(--size-15);
 }
 .hubspot_text p {
   max-width: 21.875rem;
   width: 100%;
-  font-size: 17px;
+  font-size: 1.0625rem;
   color: var(--black);
   margin-bottom: var(--size-30);
 }
@@ -364,7 +364,7 @@
   margin: 0;
 }
 .hubspot_text span {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 /* partners styling  */
 .partner {
@@ -378,7 +378,7 @@
   gap: var(--size-20);
 }
 .partner_wrapper .partner_title {
-  max-width: 600px;
+  max-width: 0.75rem;
 }
 .partner_title h2 {
   text-transform: uppercase;
@@ -410,13 +410,13 @@
 }
 .pricing_wrapper .pricing_table {
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, minmax(18.75rem, 1fr));
   align-items: center;
   justify-items: center;
   gap: var(--size-50);
 }
 .pricing_table .pricing_card {
-  padding: 50px;
+  padding: var(--size-50);
   box-shadow: 0px var(--size-15) var(--size-15) rgb(0 0 0 / 14%);
 }
 .pricing_card .price {
@@ -435,7 +435,7 @@
   margin-bottom: var(--size-30);
 }
 .pricing_card .description {
-  max-width: 235px;
+  max-width: 14.6875rem;
   width: 100%;
 }
 .pricing_card .card_button {
@@ -468,7 +468,7 @@
   color: var(--black);
 }
 .feature p {
-  max-width: 210px;
+  max-width: 13.125rem;
   width: 100%;
   margin: 0;
 }
@@ -549,7 +549,7 @@
   background-color: var(--white);
   padding: var(--size-50);
   border-radius: var(--size-10);
-  max-width: 450px;
+  max-width: 28.125rem;
   width: 100%;
 }
 .form span {
@@ -567,7 +567,7 @@
   gap: var(--size-20);
 }
 .group input {
-  width: 162px;
+  width: 10.125rem;
   height: var(--size-35);
   padding: var(--size-5);
   border: 1px solid rgb(0 0 0 / 51%);
@@ -579,7 +579,7 @@
   gap: var(--size-20);
 }
 .select_group select {
-  width: 162px;
+  width: 10.125rem;
   height: var(--size-35);
   padding: var(--size-5);
   border: 1px solid rgb(0 0 0 / 51%);
@@ -592,7 +592,7 @@
   flex-direction: column;
 }
 .message_group textarea {
-  width: 344px;
+  width: 21.5rem;
   height: 7.5rem;
   padding: var(--size-10);
   color: var(--text-color);

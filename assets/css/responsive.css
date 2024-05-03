@@ -30,13 +30,13 @@
   }
   .header .hero_section {
     position: relative;
-    top: 150px;
+    top: var(--size-150);
   }
   .hero_section .hero_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
+    gap: var(--size-80);
   }
   .hero_wrapper .hero_title {
     max-width: 100%;
@@ -48,7 +48,7 @@
   }
   .hero_title .title {
     color: var(--black);
-    font-size: 45px;
+    font-size: 2.8125rem;
     font-weight: 500;
     font-family: "inter-bold", sans-serif;
     line-height: 1.2;
@@ -57,38 +57,38 @@
   }
   .logo_icons_wrapper .google {
     top: -1.25rem;
-    left: 30px;
+    left: var(--size-30);
     width: var(--size-50);
     height: var(--size-50);
   }
   .logo_icons_wrapper .atlassian {
     top: -1.5625rem;
-    left: 190px;
+    left: 11.875rem;
   }
   .logo_icons_wrapper .asana {
     top: -1.5625rem;
-    left: 400px;
+    left: 25rem;
   }
   .logo_icons_wrapper .paypal {
-    top: 60px;
-    left: 30px;
+    top: var(--size-60);
+    left: var(--size-30);
   }
   .logo_icons_wrapper .google-a {
-    top: 160px;
-    left: 150px;
+    top: 10rem;
+    left: var(--size-150);
     width: var(--size-50);
     height: var(--size-50);
   }
   .logo_icons_wrapper .weave {
-    top: 60px;
-    left: 270px;
+    top: var(--size-60);
+    left: 16.875rem;
   }
   .logo_icons_wrapper .calender {
-    top: 160px;
-    left: 350px;
+    top: 10rem;
+    left: 21.875rem;
   }
   .benefit_section {
-    margin-top: 250px;
+    margin-top: 15.625rem;
     margin-bottom: var(--size-100);
   }
   .banner_one .banner_one_wrapper {
@@ -100,24 +100,24 @@
   .banner_one_wrapper .banner_one_header {
     max-width: 100%;
     margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: var(--size-20);
+    padding-bottom: var(--size-20);
     text-align: center;
   }
   .banner_one_header .title {
     font-family: "inter-bold", sans-serif;
-    font-size: 25px;
+    font-size: var(--size-25);
     font-weight: 500;
     line-height: 1.2;
     color: var(--black);
-    max-width: 600px;
+    max-width: 37.5rem;
     width: 100%;
   }
   .banner_one_wrapper .banner_one_image {
     padding-top: 0;
   }
   .circle_wrapper .wing {
-    width: 50px;
+    width: var(--size-50);
   }
   .hubspot_section .hubspot_wrapper {
     display: flex;
@@ -157,14 +157,14 @@
     gap: var(--size-50);
   }
   .pricing_table .pricing_card {
-    padding: 50px;
+    padding: var(--size-50);
     box-shadow: 0px var(--size-15) var(--size-15) rgb(0 0 0 / 14%);
     text-align: center;
   }
   .pricing_card .description {
     max-width: 95%;
     width: 100%;
-    font-size: 16px;
+    font-size: var(--size-16);
     text-align: justify;
   }
   .feature p {
@@ -186,13 +186,13 @@
     flex-direction: row;
     align-items: flex-start;
     padding: var(--size-50);
-    gap: 50px;
+    gap: var(--size-50);
   }
   .hire_us .sub_title {
     max-width: 100%;
     width: 100%;
     margin: 0;
-    font-size: 16px;
+    font-size: var(--size-16);
   }
   .hire_us .line {
     background-color: var(--white);
@@ -202,9 +202,9 @@
   }
   .hire_us .description {
     color: var(--white);
-    font-size: 18px;
+    font-size: var(--size-18);
     font-style: italic;
-    max-width: 400px;
+    max-width: 25rem;
     width: 100%;
   }
   .hire_us .hire_us_footer {
@@ -212,7 +212,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: var(--size-30);
-    padding: 20px;
+    padding: var(--size-20);
   }
   .hire_us_form .form {
     display: flex;
@@ -227,11 +227,11 @@
   }
   .form span {
     color: var(--black);
-    font-size: 16px;
+    font-size: var(--size-16);
   }
   .group input {
     width: 48%;
-    height: 40px;
+    height: var(--size-40);
     padding: var(--size-5);
     border: 1px solid rgb(0 0 0 / 51%);
     border-radius: 4px;
@@ -244,7 +244,7 @@
   }
   .select_group select {
     width: 48%;
-    height: 40px;
+    height: var(--size-40);
     padding: var(--size-5);
     border: 1px solid rgb(0 0 0 / 51%);
     border-radius: 4px;
@@ -262,14 +262,14 @@
   .privacy p {
     max-width: 100%;
     width: 100%;
-    font-size: 16px;
+    font-size: var(--size-16);
   }
   .message_group ul {
     display: flex;
     justify-content: start;
     align-items: flex-start;
     gap: var(--size-50);
-    margin-left: 20px;
+    margin-left: var(--size-20);
   }
   .footer_wrapper .top_footer {
     display: flex;
@@ -283,22 +283,22 @@
     gap: var(--size-20);
     margin-right: auto;
     padding: var(--size-20);
-    font-size: 16px;
+    font-size: var(--size-16);
   }
   .top_footer .links {
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: var(--size-50);
     padding: var(--size-10);
-    font-size: 16px;
+    font-size: var(--size-16);
   }
   .footer .bottom_footer {
     display: flex;
     flex-direction: column;
     gap: var(--size-50);
     padding-top: var(--size-50);
-    font-size: 16px;
+    font-size: var(--size-16);
   }
 }
 
@@ -408,13 +408,13 @@
     margin-bottom: var(--size-100);
   }
   .benefit_wrapper .benefit_header {
-    max-width: 600px;
+    max-width: 37.5rem;
     text-align: center;
   }
   .benefit_header p {
-    max-width: 250px;
+    max-width: 15.625rem;
     margin: auto;
-    font-size: 16px;
+    font-size: var(--size-16);
   }
   .banner_one .banner_one_wrapper {
     display: flex;
@@ -423,7 +423,7 @@
     background-color: rgba(249, 250, 254, 255);
   }
   .banner_one_wrapper .banner_one_header {
-    max-width: 400px;
+    max-width: 25rem;
     text-align: center;
     padding-top: 0;
     margin: auto;
@@ -434,23 +434,23 @@
     font-weight: 500;
     line-height: 1.2;
     color: var(--black);
-    max-width: 250px;
-    margin: 20px auto;
+    max-width: 15.625rem;
+    margin: var(--size-20) auto;
   }
   .why_front_wrapper .why_front_header {
-    max-width: 300px;
-    font-size: 16px;
+    max-width: 18.75rem;
+    font-size: var(--size-16);
   }
   .why_front_header p {
     text-align: center;
-    max-width: 485px;
+    max-width: 30.3125rem;
     width: 100%;
-    font-size: 16px;
+    font-size: var(--size-16);
   }
   .why_front_wrapper .why_front {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: var(--size-20);
   }
   .why_front .basic_elements,
   .why_front .components,
@@ -469,7 +469,7 @@
   .page_layout span {
     align-self: center;
     color: var(--black);
-    font-size: 16px;
+    font-size: var(--size-16);
   }
   .banner_two_wrapper .banner_two_icon {
     top: 30%;
@@ -483,15 +483,15 @@
     gap: var(--size-100);
   }
   .hubspot_image .upper_image {
-    width: 300px;
+    width: 18.75rem;
     position: relative;
     left: 12px;
   }
   .hubspot_image .image_layer {
     width: var(--size-150);
     position: absolute;
-    top: 100px;
-    left: -30px;
+    top: var(--size-100);
+    left: -var(--size-30);
     z-index: -1;
   }
   .hubspot_wrapper .hubspot_text {
@@ -503,13 +503,13 @@
     text-align: center;
   }
   .hubspot_text .logo {
-    width: 100px;
+    width: var(--size-100);
     margin-bottom: var(--size-15);
   }
   .hubspot_text p {
     max-width: 21.875rem;
     width: 100%;
-    font-size: 20px;
+    font-size: var(--size-20);
     color: var(--black);
     margin-bottom: var(--size-30);
   }
@@ -519,7 +519,7 @@
     margin: 0;
   }
   .hubspot_text span {
-    font-size: 15px;
+    font-size: var(--size-15);
   }
   .partner_wrapper .partner_logo {
     display: flex;
@@ -529,11 +529,11 @@
     gap: var(--size-30);
   }
   .pricing_header p {
-    font-size: 16px;
+    font-size: var(--size-16);
   }
   .pricing_wrapper .pricing_table {
     display: grid;
-    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    grid-template-columns: repeat(1, minmax(18.75rem, 1fr));
     align-items: center;
     justify-items: center;
     gap: var(--size-50);
@@ -550,7 +550,7 @@
     max-width: 100%;
     width: 100%;
     margin: 0;
-    font-size: 16px;
+    font-size: var(--size-16);
   }
   .hire_us_section .hire_us_wrapper {
     display: flex;
@@ -558,21 +558,21 @@
     align-items: center;
     justify-items: center;
     gap: var(--size-50);
-    padding: 20px;
+    padding: var(--size-20);
   }
   .hire_us_wrapper .hire_us {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    padding: 20px;
+    padding: var(--size-20);
     text-align: center;
   }
   .hire_us .sub_title {
     max-width: 100%;
     width: 100%;
     margin: 0;
-    font-size: 16px;
+    font-size: var(--size-16);
   }
   .hire_us .line {
     background-color: var(--white);
@@ -585,7 +585,7 @@
     font-style: italic;
     max-width: 18.75rem;
     width: 100%;
-    font-size: 16px;
+    font-size: var(--size-16);
   }
   .hire_us .hire_us_footer {
     display: flex;
@@ -599,7 +599,7 @@
     flex-direction: column;
     align-items: center;
     gap: var(--size-10);
-    padding: 30px;
+    padding: var(--size-30);
     background-color: var(--white);
     border-radius: var(--size-10);
     max-width: 450px;
@@ -619,7 +619,7 @@
     display: flex;
     flex-direction: column;
     align-self: stretch;
-    gap: 10px;
+    gap: var(--size-10);
   }
   .group input {
     width: 100%;
@@ -628,7 +628,7 @@
     border: 1px solid rgb(0 0 0 / 51%);
     border-radius: 4px;
     resize: both;
-    font-size: 14px;
+    font-size: var(--size-14);
   }
   .form .select_group {
     display: flex;
@@ -644,19 +644,19 @@
     border-radius: 4px;
     background-color: var(--white);
     resize: both;
-    font-size: 14px;
+    font-size: var(--size-14);
   }
   .form .message_group {
     display: flex;
     flex-direction: column;
-    font-size: 16px;
+    font-size: var(--size-16);
   }
   .message_group textarea {
     width: 100%;
     height: 7.5rem;
     padding: var(--size-10);
     color: var(--text-color);
-    font-size: 14px;
+    font-size: var(--size-14);
     border: 1px solid rgb(0 0 0 / 51%);
   }
   .message_group ul {
@@ -688,7 +688,7 @@
   }
   .company_info .info li {
     margin-bottom: var(--size-5);
-    font-size: 16px;
+    font-size: var(--size-16);
     padding: var(--size-10);
   }
   .top_footer .links {
@@ -698,27 +698,27 @@
     gap: var(--size-20);
     padding: var(--size-10);
     text-align: center;
-    font-size: 16px;
+    font-size: var(--size-16);
   }
   .bottom_footer .policy {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    gap: 20px;
+    gap: var(--size-20);
   }
   .policy ul {
     display: flex;
     gap: var(--size-10);
     margin: auto;
-    font-size: 16px;
+    font-size: var(--size-16);
   }
   .policy .social-media {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: var(--size-20);
-    font-size: 16px;
+    font-size: var(--size-16);
   }
   .social-media ul li a {
     display: flex;
@@ -731,7 +731,7 @@
     border-radius: 4px;
   }
   .social-media ul li a i {
-    font-size: 18px;
+    font-size: var(--size-18);
     font-weight: 400;
   }
   .social-media select {
@@ -746,12 +746,12 @@
   .bottom_footer .copyright {
     text-align: center;
     margin: auto;
-    font-size: 16px;
+    font-size: var(--size-16);
   }
   .copyright p {
-    max-width: 300px;
+    max-width: 18.75rem;
     width: 100%;
     align-self: center;
-    margin: 20px auto;
+    margin: var(--size-20) auto;
   }
 }
