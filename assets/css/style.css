@@ -377,9 +377,9 @@
   align-items: center;
   gap: var(--size-20);
 }
-.partner_wrapper .partner_title {
+/* .partner_wrapper .partner_title {
   max-width: 0.75rem;
-}
+} */
 .partner_title h2 {
   text-transform: uppercase;
   font-size: var(--size-20);
