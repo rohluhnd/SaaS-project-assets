@@ -250,18 +250,12 @@
   display: flex;
   flex: 0 1 auto;
 }
-.why_front .basic_elements,
-.why_front .components,
-.why_front .combined_components,
-.why_front .page_layout {
+.why_front .reason {
   display: flex;
   flex-direction: column;
   gap: var(--size-20);
 }
-.basic_elements .circle_wrapper,
-.components .circle_wrapper,
-.combined_components .circle_wrapper,
-.page_layout .circle_wrapper {
+.reason .circle_wrapper {
   display: flex;
   align-items: center;
 }
@@ -280,10 +274,7 @@
   border-radius: 50%;
   background-color: var(--blue);
 }
-.basic_elements span,
-.components span,
-.combined_components span,
-.page_layout span {
+.reason span {
   align-self: center;
   color: var(--black);
 }
@@ -377,9 +368,6 @@
   align-items: center;
   gap: var(--size-20);
 }
-/* .partner_wrapper .partner_title {
-  max-width: 0.75rem;
-} */
 .partner_title h2 {
   text-transform: uppercase;
   font-size: var(--size-20);
@@ -670,21 +658,13 @@
   gap: var(--size-100);
   padding: var(--size-10);
 }
-.links .company h3,
-.links .features h3,
-.links .documentation h3,
-.links .resources h3 {
+.links .group h3 {
   color: var(--black);
 }
-.links .company ul li a,
-.links .features ul li a,
-.links .documentation ul li a,
-.links .resources ul li a {
+.links .group ul li a {
   color: var(--text-color);
 }
-.links .company ul li a:hover,
-.links .features ul li a:hover,
-.links .documentation ul li a:hover {
+.links .group ul li a:hover {
   color: var(--blue);
   transition: ease-in-out 0.3s;
 }

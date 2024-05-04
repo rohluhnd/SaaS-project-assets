@@ -237,7 +237,7 @@
     border-radius: 4px;
     resize: both;
   }
-  form .select_group {
+  .form .select_group {
     display: flex;
     gap: var(--size-20);
     justify-content: space-between;
@@ -452,10 +452,7 @@
     flex-direction: column;
     gap: var(--size-20);
   }
-  .why_front .basic_elements,
-  .why_front .components,
-  .why_front .combined_components,
-  .why_front .page_layout {
+  .why_front .reason {
     display: flex;
     flex-direction: row;
     gap: var(--size-20);
@@ -463,10 +460,7 @@
   .circle_wrapper .wing {
     display: none;
   }
-  .basic_elements span,
-  .components span,
-  .combined_components span,
-  .page_layout span {
+  .reason span {
     align-self: center;
     color: var(--black);
     font-size: var(--size-16);
